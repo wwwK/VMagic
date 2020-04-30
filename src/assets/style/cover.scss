@@ -1,0 +1,118 @@
+body.el-popup-parent--hidden {
+  padding-right: 0 !important;
+}
+
+.el-table--scrollable-y {
+  .el-table__body-wrapper {
+    .el-table__row--striped {
+      td {
+        background: rgba(204, 204, 204, 0.1) !important;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(160, 160, 160, 0.6);
+      border-radius: 4px;
+
+      &:horizontal {
+        width: 4px;
+      }
+
+      &:vertical {
+        height: 4px;
+      }
+    }
+  }
+}
+
+.mcQueryPanel {
+  .el-select__tags {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(160, 160, 160, 0.6);
+      border-radius: 4px;
+
+      &:horizontal {
+        width: 4px;
+      }
+
+      &:vertical {
+        height: 4px;
+      }
+    }
+  }
+
+  .el-input {
+    .el-input__inner {
+      border-color: #6982ab;
+    }
+  }
+
+  input {
+    &::placeholder {
+      font-size: 14px;
+      color: #858585;
+    }
+  }
+}
+.mcQueryPanels {
+  .el-select__tags {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(160, 160, 160, 0.6);
+      border-radius: 4px;
+
+      &:horizontal {
+        width: 4px;
+      }
+
+      &:vertical {
+        height: 4px;
+      }
+    }
+  }
+
+  .el-input {
+    .el-input__inner {
+      border-color: #6982ab;
+    }
+  }
+
+  input {
+    &::placeholder {
+      font-size: 14px;
+      color: #858585;
+    }
+  }
+}
