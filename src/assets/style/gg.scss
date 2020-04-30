@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+  }
+
+  canvas {
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  div {
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+
+/* 自定义滚动条 */
+.scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.scroll::-webkit-scrollbar-thumb:vertical {
+  height: 4px;
+}
+
+.scroll::-webkit-scrollbar-thumb:horizontal {
+  width: 4px;
+}
+
+.hide::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: rgba(160, 160, 160, 0.6);
+  border-radius: 4px;
+  scrollbar-highlight-color: blue;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+:-webkit-autofill {
+  -webkit-text-fill-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.scroll::-webkit-scrollbar-corner {
+  background: #1f2632;
+}
+
+@font-face {
+  // 微软雅黑 Regular
+  font-family: "cf_MsYh";
+  src: url("../../../public/font/msyh.ttf") format("truetype");
+}
+
+@font-face {
+  // 微软雅黑 Bold
+  font-family: "cf_MsYh_Bold";
+  src: url("../../../public/font/msyhbd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "cf_BebasNb";
+  src: url("../../../public/font/BebasNeueBook.ttf") format("truetype");
+}
+
+@font-face {
+  // DINCond-Medium Regular
+  font-family: "cf_DINCond";
+  src: url("../../../public/font/DINCond-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "cf_YouYuan";
+  src: url("../../../public/font/SIMYOU.TTF") format("truetype");
+}

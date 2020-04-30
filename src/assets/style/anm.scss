@@ -1,0 +1,51 @@
+@keyframes widthCollapse {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes light {
+  0% {
+    border: 3px solid rgba(0, 255, 0, 0);
+    box-shadow: 0 0 0 rgba(0, 255, 0, 0), 0 0 0 rgba(0, 255, 0, 0) inset;
+  }
+  100% {
+    border: 3px solid rgba(0, 255, 0, 0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+      0 0 15px rgba(0, 0, 0, 0.6) inset;
+  }
+}
+
+@keyframes posTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes posBot {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes altAnm {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.light {
+  animation: light 3s ease-in-out infinite alternate;
+}
