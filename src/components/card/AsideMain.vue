@@ -3,16 +3,29 @@
 		<el-container>
 			<el-header></el-header>
 			<el-container>
-				<el-aside></el-aside>
+				<el-aside>
+					<AsideMenu></AsideMenu>
+				</el-aside>
 				<el-main><router-view></router-view></el-main>
 			</el-container>
-			<el-footer></el-footer>
+			<el-footer height="30px"></el-footer>
 		</el-container>
 	</div>
 </template>
 
 <script>
-export default {};
+	import AsideMenu from './AsideMenu.vue';
+export default {
+	data() {
+		return {
+			key: 1
+		}
+	},
+	components:{
+		AsideMenu
+	}
+	
+};
 </script>
 
 <style lang="scss" scoped>
@@ -22,6 +35,8 @@ export default {};
 	.el-container {
 		width: 100%;
 		height: 100%;
+		
+		
 	}
 }
 </style>

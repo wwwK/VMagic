@@ -13,6 +13,10 @@
 
 <style lang="scss" scoped>
 .aside-menu {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
 	.el-aside {
 		border-right: 1px solid rgba(221, 221, 221, 0.4);
 
